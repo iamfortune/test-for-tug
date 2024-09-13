@@ -5,4 +5,7 @@ module.exports = async function (fastify, opts) {
   fastify.get('/example', async (request, reply) => {
     return { hello: fastify.example }
   })
+fastify.get("/hello-fortune", async (request, reply) => {
+  return { message: "Hello Fortune!" };
+});
 }
